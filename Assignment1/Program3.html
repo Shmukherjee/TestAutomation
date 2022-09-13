@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <title>
+        Student's Result
+     </title>
+
+     <script>
+        function result()
+        {
+            let x = parseInt(document.getElementById("num1").value)
+            if(x>50)
+            {
+                document.getElementById("Result").value = "Pass";
+                
+            }
+            else
+            {
+                document.getElementById("Result").value = "Fail";
+            }
+        }
+     </script>
+
+</head>    
+
+<body>
+
+        Enter the student's score : <input id = "num1" ><br><br>
+        
+
+        <button onclick="result()">Result</button>
+        <input id="Result">
+        
+
+    </body>
+</html>

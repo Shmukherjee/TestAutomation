@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <title>
+        Student's Grade Calculation
+     </title>
+
+     <script>
+        function grade()
+        {
+            let x = parseInt(document.getElementById("num1").value)
+            if(x>90)
+                document.getElementById("Grade").value = "A";
+
+            else if(x>70 && x<=90)
+                document.getElementById("Grade").value = "B";  
+
+            else if(x>50 && x<=70)
+                document.getElementById("Grade").value = "C";
+                
+            else
+            {
+                document.getElementById("Grade").value = "Fail";
+            }
+        }
+     </script>
+
+</head>    
+
+<body>
+
+        Enter the student's score : <input id = "num1" ><br><br>
+        
+
+        <button onclick="grade()">Grade</button>
+        <input id="Grade">
+        
+
+    </body>
+</html>
