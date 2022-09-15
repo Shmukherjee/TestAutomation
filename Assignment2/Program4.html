@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            EMI Calculation
+        </title>
+
+        <script>
+             
+             function emi_calculation()
+             {
+                
+                let emi;
+                p = parseInt(document.getElementById("pAmount").value);
+                r = parseInt(document.getElementById("roi").value);
+                t = parseInt(document.getElementById("period").value);
+                r = r/(12*100);
+                t = t*12;
+                emi = (p*r*Math.pow(1+r,t))/(Math.pow(1+r,t)-1);
+                document.getElementById("EMI").value = emi;
+             }
+        </script>
+    </head>
+
+    <body>
+        Enter Principle Amount: <input id="pAmount"><br><br>
+        Enter Rate of Interest: <input id="roi"><br><br>
+        Enter Period(in years): <input id="period"><br><br>
+
+        <button onclick="emi_calculation()">EMI</button>
+
+        <input id="EMI">
+    </body>
+</html>

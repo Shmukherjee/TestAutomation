@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Accepts two strings
+        </title>
+
+        <script>
+             function fullName()
+             {
+                let fname = document.getElementById("fname").value;
+                let lname = document.getElementById("lname").value;
+
+                let result = fname + " " + lname
+                document.getElementById("Fullname").value = result;
+             }
+        </script>
+    </head>
+
+    <body>
+        Enter firstName: <input id="fname"><br><br>
+        Enter lastName: <input id="lname"><br><br>
+
+        <button onclick="fullName()">Fullname</button>
+
+        <input id="Fullname">
+    </body>
+</html>
